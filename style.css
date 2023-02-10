@@ -1,0 +1,66 @@
+body {
+    padding: auto;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Trebuchet MS';
+    font: initial;
+    color: #edb568;
+    background: linear-gradient(#285fb2, #006A79, #008D82, #41AE72, #c8a554, #de902a);
+    background-size: contain;
+    text-align:center;
+    -webkit-text-stroke: 0.4px black;
+}
+
+#✊ {font-size: 2em;}
+#✋ {font-size: 2em;}
+#✌️ {font-size: 2em;}
+
+/* animated radial-gradient work in progress
+ .body:hover {
+    --c:#ed9464; //firefox compatibility
+    cursor:pointer;
+    width:250px;
+    height:200px;
+    margin:15px;
+    display:inline-block;
+    transition:--c 0.5s;
+    background:radial-gradient(var(--c),#083975);
+  }
+  .container:hover {
+    --c:#fc5a03;
+  } */
+  .buttons-frame {
+    padding: 30px;
+    display: inline-grid;
+    justify-content: center;
+    grid-gap: 2em;
+    grid-auto-flow: column;
+    color: linear-gradient(#285fb2, #006A79, #008D82, #41AE72, #c8a554, #de902a);
+}
+
+/* adjust the overline, look into positions*/
+.lines{
+    font-size: 2em;
+    text-decoration: underline overline;
+}
+.btn {
+    font-size: 1.9em;
+    border:#302f30;
+    border-radius: 50%;
+    background-color: #4e342f;
+    box-shadow: 
+    1px 1px 3px 1px #2F485880,
+    2px 2px 5px 2px #2F48584D;
+    transform: background-color 1000ms ease-in, translate 1000ms;
+    perspective: 1000px;
+}
+
+.btn:hover {
+    background-color: #887f7d;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateZ(10px);
+}
